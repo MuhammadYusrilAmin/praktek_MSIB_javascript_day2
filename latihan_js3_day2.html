@@ -21,9 +21,13 @@
     let jmlBeli = 10;
     let bruto = harsat * jmlBeli;
 
+    let diskon = (produk == 'Motor') ? 0.1 * bruto : 0;
+    let harga_diskon = bruto - diskon;
     document.write("Data Pembelian " +
         "<br> Pelanggan " + pelanggan +
+        "<br> Produk yang di beli " + produk +
         "<br> Harga Satuan " + harsat +
         "<br> Jumlah barang yang dibeli " + jmlBeli +
-        "<br> Total harga dari pembelian " + bruto)
+        "<br> Total harga dari pembelian " + bruto +
+        "<br> Total Harga diskon " + harsat);
 </script>
